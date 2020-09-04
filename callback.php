@@ -63,7 +63,7 @@ session_start();
 
             $data = json_decode($output,true);
             $email = $data[0]['email'];
-           // echo $email;
+          
             session_start();
             $_SESSION['user'] = $username;
             $_SESSION['email'] = $email;
